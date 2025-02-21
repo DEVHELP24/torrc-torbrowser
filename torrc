@@ -1,0 +1,21 @@
+# Tor configuration file
+
+# Enhanced Torrc
+SocksPort 9050
+ControlPort 9051
+
+# Exclude 16 eyes and russia
+ExcludeExitNodes {us},{uk},{ca},{au},{nz},{dk},{fr},{nl},{no},{de},{be},{se},{es},{it},{at},{fi},{ru}  # 16 Eyes + Russia
+
+# Increase Anonymity
+ClientOnly 1
+DisableNetwork 0
+UseBridges 0
+
+# Just some more tweaks
+DisableDebuggerAttachment 1
+AvoidDiskWrites 1
+
+# Set the country codes for Japan and Switzerland
+ExitNodes {jp},{ch}
+StrictNodes 1
